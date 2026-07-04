@@ -1,75 +1,106 @@
-<header>
+<div align="center">
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+<img src="https://img.shields.io/badge/Python-QA%20Automation%20Scripts-3776ab?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Domain-Android%20%7C%20Camera%20%7C%20ADB-10b981?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Level-Senior%20QA%20Architect-f59e0b?style=for-the-badge"/>
 
-# Introduction to GitHub
+# 🐍 VaniPython — QA Automation Scripts
 
-_Get started using GitHub in less than an hour._
+### Python Utilities & Scripts for Android QA Automation
 
-</header>
+**ADB tools · Camera metrics · Memory profiling · Defect analysis scripts**
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Create a branch
-
-_Welcome to "Introduction to GitHub"! :wave:_
-
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
-
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
-
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
-
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
-
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
-
-![profile-readme-example](/images/profile-readme-example.png)
-
-### :keyboard: Activity: Your first branch
-
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
-
-   ![code-tab](/images/code-tab.png)
-
-3. Click on the **main** branch drop-down.
-
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
-
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+</div>
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## 📌 What Is This?
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+A personal collection of Python scripts and utilities built during 17+ years of QA automation work at Samsung R&D Institute India. Covers Android ADB automation, camera quality metrics, memory leak detection, and test data processing.
 
-</footer>
+---
+
+## 📁 Scripts Overview
+
+### 🔧 ADB Utilities
+```
+adb_device_monitor.py    → Monitor multiple devices, auto-reconnect on drop
+adb_memory_tracker.py    → Track PSS/RSS memory over test iterations
+adb_crash_parser.py      → Parse tombstone files, extract crash signatures
+adb_logcat_filter.py     → Filter logcat by tag, priority, package name
+```
+
+### 📸 Camera Quality
+```
+ssim_calculator.py       → SSIM score between two images
+psnr_calculator.py       → PSNR measurement for image fidelity
+color_accuracy.py        → ΔE2000 color difference vs Macbeth chart
+exif_reader.py           → Extract EXIF data (ISO, shutter, focal length)
+```
+
+### 🔍 Defect Analysis
+```
+defect_trend_analyzer.py → Sprint-wise defect trend visualization
+duplicate_detector.py    → Find duplicate defects by NLP similarity
+severity_classifier.py   → Auto-classify S1/S2/S3/S4 from description
+```
+
+### 📊 Test Data
+```
+test_data_generator.py   → Generate bulk test data (users, products, etc.)
+csv_to_json.py           → Convert test data formats
+fixture_builder.py       → Build pytest/Jest fixtures from Excel
+```
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone
+git clone https://github.com/vanichalla24/vanipython.git
+cd vanipython
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run any script
+python adb_memory_tracker.py --device emulator-5554 --package com.samsung.camera --iterations 20
+```
+
+---
+
+## 🔑 Key Scripts
+
+### Memory Leak Detector
+```python
+# Tracks PSS memory over N iterations
+# Flags if growth > threshold (default 50MB)
+python adb_memory_tracker.py \
+  --device emulator-5554 \
+  --package com.samsung.camera \
+  --iterations 50 \
+  --threshold 50
+```
+
+### SSIM Calculator
+```python
+# Compare two images for structural similarity
+python ssim_calculator.py \
+  --reference reference_image.jpg \
+  --test captured_image.jpg
+# Output: SSIM Score: 0.943 (PASS — threshold 0.90)
+```
+
+---
+
+## 👩‍💻 Author
+
+**Vaani Challa** — QA Architect | Samsung SRIB | 17+ Years
+Android · Camera · ISP Pipeline · Python · ADB
+
+---
+
+## 📄 License
+
+MIT © [Vaani Challa](https://github.com/vanichalla24)
